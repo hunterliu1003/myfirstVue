@@ -47,10 +47,10 @@ data: {
 >JS
 ```javascript
 var app2 = new Vue({
-el: '#app-2',
-data: {
-  message: 'You loaded this page on ' + new Date().toLocaleString()
-}
+	el: '#app-2',
+	data: {
+	  message: 'You loaded this page on ' + new Date().toLocaleString()
+	}
 })
 ```
 
@@ -78,4 +78,4 @@ var app3 = new Vue({
 })
 ```
 
-in console enter `app3.seen = false`
+Enter `app3.seen = false` in the console.You should see the message disappear.
