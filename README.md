@@ -5,7 +5,7 @@
 ## 範例
 ### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-helloWorld)
 >HTML
-```
+```html
 <div id="app">
   <p>{{ message }}</p>
 </div>
@@ -21,7 +21,7 @@ data: {
   message: 'Hello Vue.js!'
 }
 })
-```
+```html
 ### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
 >HTML
 ```
