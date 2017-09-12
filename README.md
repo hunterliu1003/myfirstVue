@@ -56,7 +56,7 @@ var app2 = new Vue({
 
 ### Conditionals and Loops
 
-#### 03-toggle
+#### [03-toggle](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-toggle)
 
 >HTML
 ```html
@@ -79,3 +79,34 @@ var app3 = new Vue({
 ```
 
 Enter `app3.seen = false` in the console.You should see the message disappear.
+
+
+#### [04-forloop](https://github.com/hunterliu1003/myfirstVue/tree/master/example/04-forloop)
+
+>HTML
+```html
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+<script type="text/javascript" src="forloop.js"></script>
+```
+
+>JS
+```javascript
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+  }
+})
+```
