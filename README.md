@@ -4,8 +4,9 @@
 
 ## 範例
 
+### Declarative Rendering
 
-### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-helloWorld)
+#### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-helloWorld)
 
 >HTML
 ```html
@@ -28,7 +29,7 @@ data: {
 ```
 
 
-### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
+#### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
 
 >HTML
 ```html
@@ -52,3 +53,29 @@ data: {
 }
 })
 ```
+
+### Conditionals and Loops
+
+#### 03-toggle
+
+>HTML
+```html
+<div id="app-3">
+  <p v-if="seen">Now you see me</p>
+</div>
+
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+<script type="text/javascript" src="toggle.js"></script>
+```
+
+>JS
+```javascript
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+})
+```
+
+in console enter `app3.seen = false`

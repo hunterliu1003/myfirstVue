@@ -3,18 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>02-message</title>
+	<title>03-toggle</title>
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<div id="app-2">
-	  <span v-bind:title="message">
-	    Hover your mouse over me for a few seconds
-	    to see my dynamically bound title!
-	  </span>
+	<div id="app-3">
+	  <p v-if="seen">Now you see me</p>
 	</div>
 
 	<script type="text/javascript" src="https://unpkg.com/vue"></script>
-	<script type="text/javascript" src="message.js"></script>
+	<script type="text/javascript" src="toggle.js"></script>
 </body>
 </html>
