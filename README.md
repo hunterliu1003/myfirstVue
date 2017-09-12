@@ -3,7 +3,10 @@
 利用 Vue.js 的[官方文件](https://vuejs.org/v2/guide/)範例學習，並記錄下過程。
 
 ## 範例
+
+
 ### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-helloWorld)
+
 >HTML
 ```html
 <div id="app">
@@ -13,6 +16,7 @@
 <script src="https://unpkg.com/vue"></script>
 <script src="helloWorld.js"></script>
 ```
+
 >JS
 ```javascript
 new Vue({
@@ -21,10 +25,13 @@ data: {
   message: 'Hello Vue.js!'
 }
 })
-```html
-### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
->HTML
 ```
+
+
+### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
+
+>HTML
+```html
 <div id="app-2">
   <span v-bind:title="message">
     Hover your mouse over me for a few seconds
@@ -35,6 +42,7 @@ data: {
 <script type="text/javascript" src="https://unpkg.com/vue"></script>
 <script type="text/javascript" src="message.js"></script>
 ```
+
 >JS
 ```javascript
 var app2 = new Vue({
