@@ -3,7 +3,7 @@
 利用 Vue.js 的[官方文件](https://vuejs.org/v2/guide/)範例學習，並記錄下過程。
 
 ## 範例
-### [01helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01helloWorld)
+### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-helloWorld)
 >HTML
 ```
 <div id="app">
@@ -22,7 +22,7 @@ data: {
 }
 })
 ```
-### [02message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02message)
+### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
 >HTML
 ```
 <div id="app-2">
