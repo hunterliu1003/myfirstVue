@@ -14,3 +14,5 @@
 
 
 ## [Vue-instance](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-instance.md)
+
+## [Template Syntax](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-template-syntax.md)
