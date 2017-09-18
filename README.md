@@ -19,5 +19,5 @@
 
 ## [Computed Properties and Watchers](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-template-syntax.md)
 
-- [08-basicExample](https://github.com/hunterliu1003/myfirstVue/tree/master/example/computed-properties-and-watchers/08-basicExample)
-- [09-caching-and-methods](https://github.com/hunterliu1003/myfirstVue/tree/master/example/computed-properties-and-watchers/09-caching-and-methods)
+- [08-basicExample](https://github.com/hunterliu1003/myfirstVue/tree/master/example/computed-properties-and-watchers/08-basicExample) - computed
+- [09-caching-and-methods](https://github.com/hunterliu1003/myfirstVue/tree/master/example/computed-properties-and-watchers/09-caching-and-methods) - methods
