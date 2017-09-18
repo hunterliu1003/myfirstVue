@@ -1,6 +1,6 @@
 # Vue
 ## 目的
-利用 Vue.js 的[官方文件](https://vuejs.org/v2/guide/)範例學習，並記錄下過程。
+利用 Vue.js 的[官方文件](https://vuejs.org/v2/guide/)範例學習，並做簡單的筆記整理。
 
 ## [Vue-example](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-example.md)
 利用簡單範例學習 Vue.js 基礎知識
@@ -16,3 +16,7 @@
 ## [Vue-instance](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-instance.md)
 
 ## [Template Syntax](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-template-syntax.md)
+
+## [Computed Properties and Watchers](https://github.com/hunterliu1003/myfirstVue/blob/master/vue-template-syntax.md)
+
+- [08-basicExample](https://github.com/hunterliu1003/myfirstVue/tree/master/example/computed-properties-and-watchers/08-basicExample)
