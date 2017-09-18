@@ -39,10 +39,12 @@
 
 ## Directives
 
+```html
 <p v-if="seen">Now you see me</p>
+```
 
 ### Arguments
->指令的參數會在":"後面
+>指令的參數會在 ":" 後面
 
 ```html
 <a v-bind:href="url"></a>
@@ -52,14 +54,14 @@
 ```
 
 ### Modifiers
->參數的後綴放在"."後面
+>參數的後綴放在 "." 後面
 
 ```html
 <form v-on:submit.prevent="onSubmit"></form>
 ```
 
 ## Shorthands
->因 v-bind 和 v-on 常用因此設計了Shorthand
+>因 v-bind 和 v-on 常用因此設計了 Shorthand
 
 ### v-bind Shorthand
 ```html
