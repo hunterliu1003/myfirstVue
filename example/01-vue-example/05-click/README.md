@@ -7,8 +7,6 @@
   <button v-on:click="reverseMessage">Reverse Message</button>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="click.js"></script>
 ```
 
 >JS

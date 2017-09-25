@@ -10,8 +10,6 @@
   <p>{{ message }}</p>
 </div>
 
-<script src="https://unpkg.com/vue"></script>
-<script src="helloWorld.js"></script>
 ```
 
 >JS
@@ -35,8 +33,6 @@ data: {
   </span>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="message.js"></script>
 ```
 
 >JS
@@ -59,8 +55,6 @@ var app2 = new Vue({
   <p v-if="seen">Now you see me</p>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="toggle.js"></script>
 ```
 
 >JS
@@ -88,8 +82,6 @@ Enter `app3.seen = false` in the console.You should see the message disappear.
   </ol>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="forloop.js"></script>
 ```
 
 >JS
@@ -120,8 +112,6 @@ In the console, enter `app4.todos.push({ text: 'New item' })`. You should see a 
   <button v-on:click="reverseMessage">Reverse Message</button>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="click.js"></script>
 ```
 
 >JS
@@ -148,8 +138,6 @@ var app5 = new Vue({
   <input v-model="message">
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="model.js"></script>
 ```
 
 >JS
@@ -178,8 +166,6 @@ var app6 = new Vue({
   </ol>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="component.js"></script>
 ```
 
 >JS

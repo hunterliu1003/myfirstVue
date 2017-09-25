@@ -6,8 +6,6 @@
   <p>{{ message }}</p>
 </div>
 
-<script src="https://unpkg.com/vue"></script>
-<script src="helloWorld.js"></script>
 ```
 
 >JS

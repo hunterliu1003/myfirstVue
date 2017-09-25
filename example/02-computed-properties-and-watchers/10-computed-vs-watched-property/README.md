@@ -5,8 +5,6 @@
 ```html
 <div id="demo">{{ fullName }}</div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="computed-vs-watched-property.js"></script>
 ```
 
 >JS

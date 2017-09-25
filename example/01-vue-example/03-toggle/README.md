@@ -6,8 +6,6 @@
   <p v-if="seen">Now you see me</p>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="toggle.js"></script>
 ```
 
 >JS

@@ -7,8 +7,6 @@
   <p>Computed reversed message: "{{ reversedMessage }}"</p>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="basicExample.js"></script>
 ```
 
 >JS

@@ -10,8 +10,6 @@
   </ol>
 </div>
 
-<script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="forloop.js"></script>
 ```
 
 >JS
