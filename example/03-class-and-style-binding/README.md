@@ -124,7 +124,7 @@ new Vue({
 
 ## Binding Inline Styles
 
-### [16-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-inline-styles/16-object-syntax)
+### [16-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/02-binding-inline-styles/16-object-syntax)
 
 >HTML
 ```html
@@ -144,6 +144,32 @@ new Vue({
     styleObject: {
       color: 'blue',
       fontSize: '13px'
+    }
+  }
+})
+```
+
+### [17-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/02-binding-inline-styles/17-array-syntax)
+
+>HTML
+```html
+<div id="vm">
+  <div v-bind:style="[baseStyles, overridingStyles]">123</div>
+</div>
+```
+
+>JS
+```javascript
+new Vue({
+  el: '#vm',
+  data: {
+    baseStyles: {
+      color: 'red',
+      fontsize: '30px'
+    },
+    overridingStyles: {
+      // color: 'blue',
+      fontsize: '13px'
     }
   }
 })

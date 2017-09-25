@@ -37,4 +37,5 @@
 
 ### Binding Inline Styles
 
-- [16-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-inline-styles/16-object-syntax)
+- [16-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/02-binding-inline-styles/16-object-syntax)
+- [17-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/02-binding-inline-styles/17-array-syntax)
