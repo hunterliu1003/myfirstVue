@@ -95,3 +95,27 @@ var os3 = new Vue({
   }
 })
 ```
+
+## [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/15-with-components)
+
+>HTML
+```html
+<div id="vm">
+  <my-component class="baz boo"></my-component>
+  <my-component v-bind:class="{ active: isActive }"></my-component>
+</div>
+```
+
+>JS
+```javascript
+Vue.component('my-component', {
+  template: '<p class="foo bar">Hi</p>'
+})
+
+new Vue({
+  el: '#vm',
+  data:{
+    isActive: true
+  }
+})
+```
