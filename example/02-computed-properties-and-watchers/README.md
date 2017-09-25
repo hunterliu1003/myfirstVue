@@ -37,7 +37,7 @@ var vm = new Vue({
 >HTML
 ```html
 <div id="example">
-	<p>Reversed message: "{{ reverseMessage() }}"</p>
+  <p>Reversed message: "{{ reverseMessage() }}"</p>
 </div>
 
 <script type="text/javascript" src="https://unpkg.com/vue"></script>
@@ -54,6 +54,36 @@ var vm = new Vue({
   methods: {
     reverseMessage: function () {
       return this.message.split('').reverse().join('')
+    }
+  }
+})
+```
+
+### [10-computed-setter](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/10-computed-setter)
+
+>HTML
+```html
+<div id="demo">{{ fullName }}</div>
+
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+<script type="text/javascript" src="computed-setter.js"></script>
+```
+
+>JS
+```javascript
+var vm = new Vue({
+  el: '#demo',
+  data: {
+    firstName: 'Foo',
+    lastName: 'Bar',
+    fullName: 'Foo Bar'
+  },
+  watch: {
+    firstName: function (val) {
+      this.fullName = val + ' ' + this.lastName
+    },
+    lastName: function (val) {
+      this.fullName = this.firstName + ' ' + val
     }
   }
 })

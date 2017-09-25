@@ -24,7 +24,6 @@ data: {
 })
 ```
 
-
 #### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vue-example/02-message)
 
 >HTML
