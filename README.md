@@ -31,8 +31,8 @@
 
 ### Binding HTML Classes
 
-- [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/13-object-syntax)
-- [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/14-array-syntax)
-- [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/15-with-components)
+- [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/13-object-syntax)
+- [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/14-array-syntax)
+- [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/15-with-components)
 
 ### Binding Inline Styles

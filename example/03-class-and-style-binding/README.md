@@ -2,7 +2,7 @@
 
 ## Binding HTML Classes
 
-### [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/13-object-syntax)
+### [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/13-object-syntax)
 
 >HTML
 ```html
@@ -54,7 +54,7 @@ var os3 = new Vue({
 })
 ```
 
-### [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/14-array-syntax)
+### [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/14-array-syntax)
 
 >HTML
 ```html
@@ -98,7 +98,7 @@ var os3 = new Vue({
 })
 ```
 
-### [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/15-with-components)
+### [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/15-with-components)
 
 >HTML
 ```html
