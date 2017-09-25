@@ -1,4 +1,4 @@
-# 10-computed-vs-watched-property
+# 11-computed-setter
 
 >HTML
 ```html
