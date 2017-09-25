@@ -28,4 +28,5 @@
 
 ## [03-binding-html-classes](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes)
 
-- [13-0bject-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/13-object-syntax)
+- [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/13-object-syntax)
+- [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/14-array-syntax)

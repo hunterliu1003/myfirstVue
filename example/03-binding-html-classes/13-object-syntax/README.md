@@ -1,4 +1,4 @@
-# 13-0bject-syntax
+# 13-object-syntax
 
 >HTML
 ```html
