@@ -25,3 +25,7 @@
 - [10-computed-vs-watched-property](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/10-computed-vs-watched-property)
 - [11-computed-setter](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/11-computed-setter)
 - [12-watchers](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/12-watchers)
+
+## 03-binding-html-classes
+
+- [13-0bject-syntax]()
