@@ -59,14 +59,14 @@ var vm = new Vue({
 })
 ```
 
-### [10-computed-setter](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/10-computed-setter)
+### [10-computed-vs-watched-property](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/10-computed-vs-watched-property)
 
 >HTML
 ```html
 <div id="demo">{{ fullName }}</div>
 
 <script type="text/javascript" src="https://unpkg.com/vue"></script>
-<script type="text/javascript" src="computed-setter.js"></script>
+<script type="text/javascript" src="computed-vs-watched-property.js"></script>
 ```
 
 >JS
