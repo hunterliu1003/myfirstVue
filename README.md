@@ -36,3 +36,5 @@
 - [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-html-classes/15-with-components)
 
 ### Binding Inline Styles
+
+- [16-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/01-binding-inline-styles/16-object-syntax)
