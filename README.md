@@ -3,7 +3,7 @@
 
 將 Vue.js 的[官方文件](https://vuejs.org/v2/guide/)範例學習，並做簡單的筆記整理。
 
-## [Vue-example](https://github.com/hunterliu1003/myfirstVue/blob/master/example/01-vue-example/README.md)
+## [Vue-example](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vue-example)
 利用簡單範例學習 Vue.js 基礎知識
 - [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vue-example/01-helloWorld)
 - [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vue-example/02-message)
