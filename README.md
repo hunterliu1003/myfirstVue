@@ -26,8 +26,13 @@
 - [11-computed-setter](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/11-computed-setter)
 - [12-watchers](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/12-watchers)
 
-## [03-binding-html-classes](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes)
 
-- [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/13-object-syntax)
-- [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/14-array-syntax)
-- [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/15-with-components)
+## [Class and Style Bindings](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding)
+
+### Binding HTML Classes
+
+- [13-object-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/13-object-syntax)
+- [14-array-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/14-array-syntax)
+- [15-with-components](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/15-with-components)
+
+### Binding Inline Styles
