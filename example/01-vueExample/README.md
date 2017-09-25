@@ -2,7 +2,7 @@
 
 ### Declarative Rendering
 
-#### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-helloWorld)
+#### [01-helloWorld](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/01-helloWorld)
 
 >HTML
 ```html
@@ -25,7 +25,7 @@ data: {
 ```
 
 
-#### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-message)
+#### [02-message](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/02-message)
 
 >HTML
 ```html
@@ -52,7 +52,7 @@ var app2 = new Vue({
 
 ### Conditionals and Loops
 
-#### [03-toggle](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-toggle)
+#### [03-toggle](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/03-toggle)
 
 >HTML
 ```html
@@ -77,7 +77,7 @@ var app3 = new Vue({
 Enter `app3.seen = false` in the console.You should see the message disappear.
 
 
-#### [04-forloop](https://github.com/hunterliu1003/myfirstVue/tree/master/example/04-forloop)
+#### [04-forloop](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/04-forloop)
 
 >HTML
 ```html
@@ -112,7 +112,7 @@ In the console, enter `app4.todos.push({ text: 'New item' })`. You should see a 
 
 ### handling User Input
 
-#### [05-click](https://github.com/hunterliu1003/myfirstVue/tree/master/example/05-click)
+#### [05-click](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/05-click)
 
 >HTML
 ```html
@@ -140,7 +140,7 @@ var app5 = new Vue({
 })
 ```
 
-#### [06-model](https://github.com/hunterliu1003/myfirstVue/tree/master/example/06-model)
+#### [06-model](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/06-model)
 
 >HTML
 ```html
@@ -165,7 +165,7 @@ var app6 = new Vue({
 
 ### Composing with Components
 
-#### [07-component](https://github.com/hunterliu1003/myfirstVue/tree/master/example/07-component)
+#### [07-component](https://github.com/hunterliu1003/myfirstVue/tree/master/example/01-vueExample/07-component)
 
 >HTML
 ```html
