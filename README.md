@@ -26,6 +26,6 @@
 - [11-computed-setter](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/11-computed-setter)
 - [12-watchers](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/12-watchers)
 
-## 03-binding-html-classes
+## [03-binding-html-classes](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes)
 
-- [13-0bject-syntax]()
+- [13-0bject-syntax](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-binding-html-classes/13-object-syntax)
