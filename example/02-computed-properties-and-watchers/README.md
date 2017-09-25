@@ -116,7 +116,7 @@ var vm = new Vue({
 })
 ```
 
-#### [12-watchers](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/11-computed-setter)
+### [12-watchers](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/12-watchers)
 
 >HTML
 ```html

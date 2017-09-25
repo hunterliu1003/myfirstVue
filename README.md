@@ -23,4 +23,5 @@
 - [08-basicExample](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/08-basicExample) - computed
 - [09-caching-and-methods](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/09-caching-and-methods) - methods
 - [10-computed-vs-watched-property](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/10-computed-vs-watched-property)
-
+- [11-computed-setter](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/11-computed-setter)
+- [12-watchers](https://github.com/hunterliu1003/myfirstVue/tree/master/example/02-computed-properties-and-watchers/12-watchers)
