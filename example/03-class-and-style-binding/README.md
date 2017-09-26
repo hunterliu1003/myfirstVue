@@ -174,3 +174,21 @@ new Vue({
   }
 })
 ```
+
+### [18-multiple-values](https://github.com/hunterliu1003/myfirstVue/tree/master/example/03-class-and-style-binding/02-binding-inline-styles/18-multiple-values)
+
+
+>HTML
+```html
+<div id="vm">
+  <div v-bind:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
+</div>
+```
+
+>JS
+```javascript
+new Vue({
+  el: '#vm'
+})
+```
+
