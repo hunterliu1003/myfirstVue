@@ -4,15 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>18 - Multiple Values</title>
+  <title>19 - v-if & v-else-if & v-else</title>
   <link rel="stylesheet" href="">
 </head>
 
 <body>
   <div id="vm">
-    <div v-bind:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
+    <div v-if="Date.now()%10/10 > 0.7">
+      Now you see random number > 0.7
+    </div>
+    <div v-else-if="Date.now()%10/10 > 0.4">
+      Now you see random number > 0.4
+    </div>
+    <div v-else>
+    	Now you see random number <= 0.4
+    </div>
   </div>
-
 
   <script type="text/javascript" src="https://unpkg.com/vue"></script>
   <script type="text/javascript" src="index.js"></script>
