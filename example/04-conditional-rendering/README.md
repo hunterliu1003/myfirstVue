@@ -55,3 +55,21 @@ new Vue({
 
 ## v-show
 
+### [21-v-show](https://github.com/hunterliu1003/myfirstVue/tree/master/example/04-conditional-rendering/01-v-if/20-controlling-reusable-elements-with-key)
+
+>HTML
+```html
+<div id="vm">
+  <h1 v-show="ok">Hello!</h1>
+</div>
+```
+
+>JS
+```javascript
+new Vue({
+  el: '#vm',
+  data: {
+    ok: true
+  }
+})
+```
