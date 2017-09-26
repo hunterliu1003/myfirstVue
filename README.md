@@ -47,3 +47,4 @@
 
 ### v-if
 - [19-v-if-else-if-else](https://github.com/hunterliu1003/myfirstVue/tree/master/example/04-conditional-rendering/01-v-if/19-v-if-else-if-else)
+- [20-controlling-reusable-elements-with-key](https://github.com/hunterliu1003/myfirstVue/tree/master/example/04-conditional-rendering/01-v-if/20-controlling-reusable-elements-with-key)
