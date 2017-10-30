@@ -1,0 +1,87 @@
+table {
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+td {
+  padding: 5px;
+}
+
+.item-value-rise {
+  color: #659f13;
+}
+.item-value-decrease {
+  color: #e21c00;
+}
+.item-value-none {
+  color: lighten(@gray-base, 44%);;
+}
+
+
+.rtb-ad-item-status-active-wrap {
+  position: relative;
+}
+.rtb-ad-item-status-active-wrap .status-icon-wrap {
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.rtb-ad-item-status-active-wrap:active .rtb-ad-item-status-setting-wrap {
+  display: block;
+}
+.rtb-ad-item-status-active {
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 6px;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0 rgba(100, 100, 100, 0);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: transform .2s, opacity .2s;
+}
+.rtb-ad-item-status-active:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+.rtb-ad-item-status-active .item-status-dropdown-icon-wrap {
+  display: none;
+  opacity: 0;
+  transition: opacty 0.3s;
+}
+.rtb-ad-item-status-row + .rtb-ad-item-status-row {
+  margin-top: 3px;
+}
+.rtb-ad-item-status-setting-wrap {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  padding: 32.8px 10px 10px;
+}
+.rtb-ad-item-status-setting-wrap:hover {
+  display: block;
+}
+.rtb-ad-item-status-setting {
+  min-width: 100px;
+  margin-left: -5px;
+  padding: 10px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  color: #767676;
+}
+.rtb-ad-item-status-setting .rtb-ad-item-status-setting-item + .rtb-ad-item-status-setting-item {
+  margin-top: 0;
+}
+.rtb-ad-item-status-setting-item {
+  cursor: pointer;
+}
+.rtb-ad-item-status-setting-item:hover {
+  color: #3f3f3f;
+}

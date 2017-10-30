@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>v-for</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <ht-dropdown></ht-dropdown>
+
+  <div id="mod-test-module" class="rt-search-by-date rt-mb" data-module="dropdown-module">
+    <p class="rt-search-by-date-text">查詢</p>
+    <div class="rt-dropdown">
+      <div class="rt-dropdown-status" data-type="dropdown-status">
+        <p class="rt-dropdown-status-text"></p><span class="rti rti-chevron-down-icon status-icon-wrap"></span>
+      </div>
+      <div class="rt-dropdown-items">
+        <a href="{{ filter_url_time_last_seven_days }}" class="rt-dropdown-item" data-type="dropdown-item">最近&nbsp;7&nbsp;天</a>
+        <a href="{{ filter_url_time_last_thirty_days }}" class="rt-dropdown-item" data-type="dropdown-item">最近&nbsp;30&nbsp;天</a>
+        <a href="{{ filter_url_time_last_three_months }}" class="rt-dropdown-item" data-type="dropdown-item">最近&nbsp;3&nbsp;個月</a>
+        <a href="{{ filter_url_time_last_six_months }}" class="rt-dropdown-item" data-type="dropdown-item">最近&nbsp;6&nbsp;個月</a>
+        <a href="{{ filter_url_time_last_year }}" class="rt-dropdown-item" data-type="dropdown-item">最近&nbsp;1&nbsp;年</a>
+      </div>
+    </div>
+  </div>
+  <div id="mod-test-module" data-module="abc">
+      ...
+  </div>
+  <table id="gTableVue" class="g_table">
+    <thead>
+      <tr>
+        <th>商品名稱/時間</th>
+        <th>狀態</th>
+        <th>瀏覽數</th>
+        <th>點擊數</th>
+        <th>花費</th>
+        <th>點擊率</th>
+        <th>訂單數</th>
+        <th>銷售數</th>
+        <th>銷售金額</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <!-- <tbody is="g-rows"></tbody> -->
+    <tbody v-if="gRows.length !== 0">
+      <tr v-for="gRow in gRows">
+        <td>
+          <p>{{ gRow.gImageUrl }}</p>
+          <p>{{ gRow.gName }}</p>
+          <p>{{ gRow.rStartTime }}</p>
+          <p>{{ gRow.rEndTime }}</p>
+          <p>{{ gRow.rBudget }}</p>
+        </td>
+        <td>
+          <!-- <p>{{ parseRStatus(gRow.rStatus) }}</p> -->
+          <div class="rtb-ad-item-status-active-wrap">
+            <div class="rtb-ad-item-status-setting-wrap">
+              <ul class="rtb-ad-item-status-setting rt-list-hover">
+                <li class="rt-list-item rtb-ad-item-status-setting-item"><span class="rti rti-2x rti-hourglass-loading-loading" title="廣告正等待播放"></span>等待播放</li>
+                <li class="rt-list-item rtb-ad-item-status-setting-item"><span class="rti rti-2x rti-circle-progress" title="播放廣告"></span>進行播放</li>
+                <li class="rt-list-item rtb-ad-item-status-setting-item"><span class="rti rti-2x rti-pause-circle-pause" title="暫停播放廣告"></span>暫停播放</li>
+                <li class="rt-list-item rtb-ad-item-status-setting-item"><span class="rti rti-2x rti-stop-circle-stop" title="結束播放廣告"></span>結束播放</li>
+              </ul>
+            </div>
+
+            <div class="rtb-ad-item-status-active" data-type="edit-rtb-ad-status-btn">
+              <span v-if="gRow.rStatus === 1" :class="" class="rti rti-hourglass-loading-loading status-icon-wrap"></span><span v-if="gRow.rStatus === 1" class="js-ad-status-text-waiting">待播放</span>
+              <span v-if="gRow.rStatus === 0" class="rti rti-circle-progress status-icon-wrap"></span><span v-if="gRow.rStatus === 0" class="js-ad-status-text-progress">進行中</span>
+              <span v-if="gRow.rStatus === 2" class="rti rti-pause-circle-pause status-icon-wrap"></span><span v-if="gRow.rStatus === 2" class="js-ad-status-text-pause">已暫停</span>
+              <span v-if="gRow.rStatus >= 3" class="rti rti-stop-circle-stop status-icon-wrap"></span><span v-if="gRow.rStatus >= 3" class="js-ad-status-text-stop">已結束</span>
+              <div class="item-status-dropdown-icon-wrap">
+                <span class="rti rti-chevron-down-icon status-icon-wrap" title="點擊即可重新設定廣告播放狀態"></span>
+              </div>
+            </div>
+          </div>
+          <p v-if="gRow.rStatus == 6">{{ gRow.isGoodsRemoved }}</p>
+        </td>
+        <td v-for="i in 7">
+          <p>{{ gRow.statSelected[0] }}</p>
+          <p v-if="gRow.statGrowth[i-1] > 0" class="item-value-rise">+{{ gRow.statGrowth[i-1] }}</p>
+          <p v-else-if="gRow.statGrowth[i-1] === 0" class="item-value-none">--</p>
+          <p v-else class="item-value-decrease">{{ gRow.statGrowth[i-1] }}</p>
+        </td>
+        <td>
+          <a :href="'{{ config.point_host }}/rtb/kword_list.php?'+gRow.gno">管理</a>
+        </td>
+      </tr>
+    </tbody>
+    <tbody v-else>
+      <tr>
+        <td colspan="10">目前沒有已設定的關鍵字廣告</td>
+      </tr>
+    </tbody>
+  </table>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://unpkg.com/vue"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/t3js/2.7.0/t3.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
