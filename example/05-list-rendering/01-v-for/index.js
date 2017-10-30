@@ -140,16 +140,12 @@ var gTableVue = new Vue({
 })
 
 Vue.component('ht-dropdown', {
-  template:`
-
-  `,
-  prop: {
-
-  }
+  prop: ['message'],
+  template: '<span>{{ message }}</span>'
 })
 
 var vueDropdown = new Vue({
-  el: 'ht-dropdown',
+  el: '.ht-dropdown',
   data: {
     selectOptions: [
       { text: 'Male', value: 'male'},
