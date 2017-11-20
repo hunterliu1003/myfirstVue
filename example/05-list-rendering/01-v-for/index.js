@@ -54,68 +54,42 @@ RT.context = {
 }
 
 
-// Vue.component('g-rows',{
-//   template: `
-//     <tbody v-if="gRows.length !== 0">
-//       <tr v-for="gRow in gRows">
-//         <td>
-//           <p>{{ gRow.gImageUrl }}</p>
-//           <p>{{ gRow.gName }}</p>
-//           <p>{{ gRow.rStartTime }}</p>
-//           <p>{{ gRow.rEndTime }}</p>
-//           <p>{{ gRow.rBudget }}</p>
-//         </td>
-//         <td>
-//           <p>{{ parseRStatus(gRow.rStatus) }}</p>
-//           <p v-if="gRow.rStatus == 6">{{ gRow.isGoodsRemoved }}</p>
-//         </td>
-//         <td v-for="i in 7">
-//           <p>{{ gRow.statSelected[0] }}</p>
-//           <p v-if="gRow.statGrowth[i-1] > 0" class="item-value-rise">+{{ gRow.statGrowth[i-1] }}</p>
-//           <p v-else-if="gRow.statGrowth[i-1] === 0" class="item-value-none">--</p>
-//           <p v-else class="item-value-decrease">{{ gRow.statGrowth[i-1] }}</p>
-//         </td>
-//         <td>
-//           <a :href="'{{ config.point_host}}/rtb/kword_list.php?'+gRow.gno">管理</a>
-//         </td>
-//       </tr>
-//     </tbody>
-//     <tbody v-else>
-//       <tr>
-//         <td colspan="10">目前沒有已設定的關鍵字廣告</td>
-//       </tr>
-//     </tbody>`,
-//   data: function() {
-//     return {
-//       gRows: RT.context.gRows
-//     }
-//   },
-//   methods: {
-//     parseRStatus: function(rStatus) {
-//       let rStatusStr;
-//       switch(rStatus) {
-//         case 0:
-//           rStatusStr = '進行中';
-//           break;
-//         case 1:
-//           rStatusStr = '待播放';
-//           break;
-//         case 2:
-//           rStatusStr = '已暫停';
-//           break;
-//         case 3: case 4: case 5: case 6: case 7:
-//           rStatusStr = '已結束';
-//           break;
-//       }
-//       return rStatusStr;
-//     }
-//   }
-// })
-
-var gTableVue = new Vue({
-  el: '.g_table',
-  data: {
-    gRows: RT.context.gRows
+Vue.component('g-rows',{
+  template: `
+    <tbody v-if="gRows.length !== 0">
+      <tr v-for="gRow in gRows">
+        <td>
+          <p>{{ gRow.gImageUrl }}</p>
+          <p>{{ gRow.gName }}</p>
+          <p>{{ gRow.rStartTime }}</p>
+          <p>{{ gRow.rEndTime }}</p>
+          <p>{{ gRow.rBudget }}</p>
+        </td>
+        <td>
+          <p>{{ parseRStatus(gRow.rStatus) }}</p>
+          <ht-dropdown :options="selectOptions"></ht-dropdown>
+          <p v-if="gRow.rStatus == 6">{{ gRow.isGoodsRemoved }}</p>
+        </td>
+        <td v-for="i in 7">
+          <p>{{ gRow.statSelected[0] }}</p>
+          <p v-if="gRow.statGrowth[i-1] > 0" class="item-value-rise">+{{ gRow.statGrowth[i-1] }}</p>
+          <p v-else-if="gRow.statGrowth[i-1] === 0" class="item-value-none">--</p>
+          <p v-else class="item-value-decrease">{{ gRow.statGrowth[i-1] }}</p>
+        </td>
+        <td>
+          <a :href="'{{ config.point_host}}/rtb/kword_list.php?'+gRow.gno">管理</a>
+        </td>
+      </tr>
+    </tbody>
+    <tbody v-else>
+      <tr>
+        <td colspan="10">目前沒有已設定的關鍵字廣告</td>
+      </tr>
+    </tbody>`,
+  data: function() {
+    return {
+      gRows: RT.context.gRows
+    }
   },
   methods: {
     parseRStatus: function(rStatus) {
@@ -139,21 +113,93 @@ var gTableVue = new Vue({
   }
 })
 
+// vue dropdown
 Vue.component('ht-dropdown', {
-  prop: ['message'],
-  template: '<span>{{ message }}</span>'
-})
-
-var vueDropdown = new Vue({
-  el: '.ht-dropdown',
-  data: {
-    selectOptions: [
-      { text: 'Male', value: 'male'},
-      { text: 'Female', value: 'female'},
-    ]
+  props: ['options', 'status'],
+  template: `
+    <div class="ht-dropdown">
+      <div v-on:click="toggleDropdown" v-on:mouseover="closeDropdownOnMouseover" class="ht-dropdown-text">{{ status }}</div>
+      <div class="ht-dropdown-list">
+        <div v-on:click="setDropdownStatus" v-for="option in options" class="ht-dropdown-item" :data-value="option.value">{{ option.text }}</div>
+      </div>
+    </div>`,
+  methods: {
+    toggleDropdown: function (event) {
+      $(event.target).next().toggle();
+    },
+    closeDropdownOnMouseover: function(event) {
+      $(document).on('mouseover', function(event) {
+        if (!$(event.target).closest('.ht-dropdown').length) {
+          $('.ht-dropdown-list').hide();
+        }
+      });
+    },
+    setDropdownStatus: function(event) {
+      $(event.target).closest('.ht-dropdown').find('.ht-dropdown-text').data('value', $(event.target).data('value'));
+      $(event.target).closest('.ht-dropdown').find('.ht-dropdown-text').text($(event.target).text());
+      $(event.target).closest('.ht-dropdown-list').hide();
+    }
   }
 })
 
+var gTableVue = new Vue({
+  el: '.g_table',
+  data: {
+    gRows: RT.context.gRows,
+    selectOptions: [
+      { text: '等待播放', value: '等待播放'},
+      { text: '進行播放', value: '進行播放'},
+      { text: '暫停播放', value: '暫停播放'},
+      { text: '結束播放', value: '結束播放'},
+    ]
+  },
+  methods: {
+    parseRStatus: function(rStatus) {
+      let rStatusStr;
+      switch(rStatus) {
+        case 0:
+          rStatusStr = '進行中';
+          break;
+        case 1:
+          rStatusStr = '待播放';
+          break;
+        case 2:
+          rStatusStr = '已暫停';
+          break;
+        case 3: case 4: case 5: case 6: case 7:
+          rStatusStr = '已結束';
+          break;
+      }
+      return rStatusStr;
+    }
+  }
+})
+
+
+
+
+var vueDropdown = new Vue({
+  el: 'ht-dropdown',
+  data: {
+    selectOptions: [
+      { text: '等待播放', value: '等待播放'},
+      { text: '進行播放', value: '進行播放'},
+      { text: '暫停播放', value: '暫停播放'},
+      { text: '結束播放', value: '結束播放'},
+    ]
+  }
+})
+// var vueDropdown2 = new Vue({
+//   el: '.ht-dropdown',
+//   data: {
+//     options: [
+//       { text: 'Male', value: 'male'},
+//       { text: 'Female', value: 'female'},
+//     ]
+//   }
+// })
+
+// t3 dropdown
 Box.Application.addModule('dropdown-module', function(context) {
   'use strict'
   let $module = $(context.getElement());

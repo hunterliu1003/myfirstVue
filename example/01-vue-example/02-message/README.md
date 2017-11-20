@@ -1,6 +1,7 @@
 # 02-message
 
->HTML
+> HTML
+
 ```html
 <div id="app-2">
   <span v-bind:title="message">
@@ -8,10 +9,10 @@
     to see my dynamically bound title!
   </span>
 </div>
-
 ```
 
->JS
+> JS
+
 ```javascript
 var app2 = new Vue({
 	el: '#app-2',

@@ -1,6 +1,7 @@
 # 05-click
 
->HTML
+> HTML
+
 ```html
 <div id="app-5">
   <p>{{ message }}</p>
@@ -9,7 +10,8 @@
 
 ```
 
->JS
+> JS
+
 ```javascript
 var app5 = new Vue({
   el: '#app-5',

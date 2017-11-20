@@ -1,6 +1,7 @@
 # 04-forloop
 
->HTML
+> HTML
+
 ```html
 <div id="app-4">
   <ol>
@@ -12,7 +13,8 @@
 
 ```
 
->JS
+> JS
+
 ```javascript
 var app4 = new Vue({
   el: '#app-4',
